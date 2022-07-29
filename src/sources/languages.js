@@ -72,12 +72,13 @@ const languages = [
     },
     about: {
       text1: "Hello, my name is Samuel",
-      text2: `Since i was a boy i've always liked technology, i had my first contact 
-      whith 8 years old, i used to configure plugins for a minecraft server. One of my 
-      goals is to become an excellent programmer, who doesn't know only the necessary, one who 
-      can understand low-level languages, i like to understand everything that happens behind the scenes. 
-      Some of my hobbies are: playing a game, playing piano and, of course, create, can be anything, a history, a program,
-      may be the coolest thing for me is create`,
+      text2: `Since I was a kid, I've always liked technology. 
+      I had my first contact with it when I was 8 years old, configuring plugins 
+      for a minecraft server. One of my goals is to become an excellent programmer, 
+      who knows much more besides the necessary, who understands low-level languages. I like to know everything 
+      that happens behind the scenes. Some of my hobbies are playing videogames, writing, playing the piano and, 
+      of course, creating new stuff. It can be anything from a simple story to a complex program. I would say this 
+      is my favorite thing to do: to create.`,
     },
     techs: {
       text1: "Tecnologias",
