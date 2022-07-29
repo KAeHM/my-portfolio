@@ -113,20 +113,33 @@ function Header({ setLanguage, activeLanguage }) {
             </Text>
 
             <Box display={"flex"} gap={"20px"}>
-              <IconButton
-                borderRadius={"full"}
-                border={"none"}
-                variant={"outline"}
-                size={"lg"}
-                icon={<FiGithub size={"30px"} color={"#A38EFF"} />}
-              />
-              <IconButton
-                borderRadius={"full"}
-                border={"none"}
-                variant={"outline"}
-                size={"lg"}
-                icon={<FiLinkedin size={"30px"} color={"#A38EFF"} />}
-              />
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/KAeHM"
+              >
+                <IconButton
+                  borderRadius={"full"}
+                  border={"none"}
+                  variant={"outline"}
+                  size={"lg"}
+                  icon={<FiGithub size={"30px"} color={"#A38EFF"} />}
+                />
+              </a>
+
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://www.linkedin.com/in/samuel-lima-236661202/"
+              >
+                <IconButton
+                  borderRadius={"full"}
+                  border={"none"}
+                  variant={"outline"}
+                  size={"lg"}
+                  icon={<FiLinkedin size={"30px"} color={"#A38EFF"} />}
+                />
+              </a>
             </Box>
           </Box>
 
