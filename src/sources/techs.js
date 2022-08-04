@@ -1,39 +1,38 @@
 const techs = [
   {
-    title: "NuKenzie",
+    title: "API CRUD + ADM",
     shouldNew: true,
-    languages: ["JS", "React", "HTML", "CSS"],
+    languages: ["Express", "Node JS"],
     description:
-      "Foi um projeto desenvolvido na KenzieAcademy, nós tinhamos que fazer um ambiente para um dev.",
-    gitLink: "",
-    demo: "",
+      "Foi um projeto desenvolvido com Node JS, a missão era fazer um CRUD com permissão de ADM",
+    gitLink: "https://github.com/KAeHM/API-CRUD",
+    demo: "https://github.com/KAeHM/API-CRUD",
+  },
+  {
+    title: "KenzieHub",
+    shouldNew: false,
+    languages: ["React JS", "HTML", "CSS"],
+    description:
+      "Aplicação com cadastro e login, o usuario cadastrado poderia adicionar tecnologias na sua lista de aprendidas e o nível dela",
+    gitLink: "https://github.com/KAeHM/KenzieHub",
+    demo: "https://kenzie-hub-sand-pi.vercel.app/",
   },
   {
     title: "NuKenzie",
     shouldNew: false,
-    languages: ["JS", "React", "HTML", "CSS"],
+    languages: ["React JS", "HTML", "CSS"],
     description:
-      "Foi um projeto desenvolvido na KenzieAcademy, nós tinhamos que fazer um ambiente para um dev.",
-    gitLink: "",
-    demo: "",
+      "Projeto para administração financeira, o usuario poderia adicionar gastos e ganhos e remove-los.",
+    gitLink: "https://github.com/KAeHM/NuKenzie",
+    demo: "https://nu-kenzie-3s5gqu3me-kaehm.vercel.app/",
   },
   {
-    title: "NuKenzie",
+    title: "Hamburgueria",
     shouldNew: false,
-    languages: ["JS", "React", "HTML", "CSS"],
-    description:
-      "Foi um projeto desenvolvido na KenzieAcademy, nós tinhamos que fazer um ambiente para um dev.",
-    gitLink: "",
-    demo: "",
-  },
-  {
-    title: "NuKenzie",
-    shouldNew: false,
-    languages: ["JS", "React", "HTML", "CSS"],
-    description:
-      "Foi um projeto desenvolvido na KenzieAcademy, nós tinhamos que fazer um ambiente para um dev.",
-    gitLink: "",
-    demo: "",
+    languages: ["React JS", "HTML", "CSS"],
+    description: "Um E-commerce feito em React, com carrinho e filtro.",
+    gitLink: "https://github.com/KAeHM/Hamburgueria",
+    demo: "https://hamburgueria-puce.vercel.app/",
   },
 ];
 

@@ -19,7 +19,7 @@ function Projects({ activeLanguage }) {
       className={"projects"}
     >
       <Heading fontSize={"3xl"} color={"black"}>
-        Projetos
+        {activeLanguage === "Portuguese" ? "Projetos" : "Projects"}
       </Heading>
 
       <Box display={"flex"} gap={"30px"} flexWrap={"wrap"} maxW={"800px"}>

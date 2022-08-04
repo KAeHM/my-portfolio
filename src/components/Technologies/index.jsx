@@ -37,7 +37,7 @@ function Technologies({ activeLanguage }) {
           direction={"row"}
         >
           <Heading as={"h2"} color={"white"} fontSize={"3xl"}>
-            Tecnologias
+            {activeLanguage.techs && activeLanguage.techs.text1}
           </Heading>
         </Stack>
 

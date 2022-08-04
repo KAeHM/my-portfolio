@@ -2,7 +2,7 @@ import { Box, Badge, Stack } from "@chakra-ui/react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 function Card({ elem }) {
-  let { title, shouldNew, languages, description } = elem;
+  let { title, shouldNew, languages, description, gitLink, demo } = elem;
 
   return (
     <Box
@@ -49,27 +49,30 @@ function Card({ elem }) {
         </Box>
 
         <Stack justifyContent={"space-around"} direction={"row"}>
-          <Box
-            cursor={"pointer"}
-            alignItems={"center"}
-            gap={"10px"}
-            color={"gray.300"}
-            display={"flex"}
-          >
-            <FiGithub />
-            Github code
-          </Box>
-
-          <Box
-            cursor={"pointer"}
-            alignItems={"center"}
-            gap={"10px"}
-            color={"gray.300"}
-            display={"flex"}
-          >
-            <FiExternalLink />
-            Demo
-          </Box>
+          <a rel="noreferrer" target="_blank" href={gitLink}>
+            <Box
+              cursor={"pointer"}
+              alignItems={"center"}
+              gap={"10px"}
+              color={"gray.300"}
+              display={"flex"}
+            >
+              <FiGithub />
+              Github code
+            </Box>
+          </a>
+          <a rel="noreferrer" target="_blank" href={demo}>
+            <Box
+              cursor={"pointer"}
+              alignItems={"center"}
+              gap={"10px"}
+              color={"gray.300"}
+              display={"flex"}
+            >
+              <FiExternalLink />
+              Demo
+            </Box>
+          </a>
         </Stack>
       </Box>
     </Box>
