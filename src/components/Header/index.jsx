@@ -79,7 +79,7 @@ function Header({ setLanguage, activeLanguage }) {
             flexDirection={"column"}
             justifyContent={"center"}
             alignItems={"center"}
-            gap={"20px"}
+            gap={"30px"}
             textAlign={"center"}
           >
             <Heading
@@ -97,7 +97,7 @@ function Header({ setLanguage, activeLanguage }) {
               </Highlight>
             </Heading>
 
-            <Text as={"div"} h={"48px"} color={"#e9ecef"} maxW={"400px"}>
+            <Text as={"div"} h={"65px"} color={"#e9ecef"} maxW={"400px"}>
               <Typewriter
                 options={{
                   loop: true,
