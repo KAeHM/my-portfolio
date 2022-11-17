@@ -1,8 +1,8 @@
 import brasilPng from "../utils/brasil.png";
 import euaPng from "../utils/eua.png";
-import charJS from "../utils/charJS.png";
+import char2 from "../utils/char2.png";
 import charNode from "../utils/charNode.png";
-import charHtml from "../utils/charHtml.png";
+import charGif from "../utils/char.gif";
 import charReact from "../utils/charReact.png";
 
 const languages = [
@@ -30,32 +30,34 @@ const languages = [
     },
     techs: {
       text1: "Tecnologias",
+      tab1: "Front End",
+      tab2: "Back End",
+      tab3: "Auxiliares",
+      tab4: "Prática",
       0: {
-        img: charJS,
-        description: `JavaScript é a linguagem que mais domino atualmente, 
-        considero ter uma boa lógica para resolver problemas mais complexos. Como eu estou lidando mais com o front,
-        não senti em nenhum momento em que minha lógica foi desafiada. Eu estudo essa linguagem à aproximadamente 8 meses.
-        Desenvolvi a lógica de programação rapidamente por causa da minha experiência com Python`,
+        img: charReact,
+        description: `O front-end é minha parte criativa, é aqui onde eu deixo minha mente trabalhar em lados artisticos
+        e deixar minha criatividade trabalhar, eu gosto bastante de mostrar minhas ideias e deixar tudo organizado e agradável. Eu considero ter
+        conhecimento solido em desenvolvimento front-end e minha ferramenta principal de desenvolvimento é o React(TypeScript).`,
       },
       1: {
-        img: charHtml,
-        description: `Como estudante de JavaScript, não poderia ficar sem elas, e com essas, 
-        fiquei ciente do que um boa página deve ter. Pratiquei bastante as semanticas de HTML, 
-        para utilizar as tags de acordo com a acessibilidade do usuário.No CSS treinei bastante responsividade, 
-        todos os projetos que eu fiz depois de aprender o conceito mobile First, foram feitos para celular e 
-        desktop. Também tenho um pouco de conhecimento em UI e UX, mas somente o básico.`,
+        img: charNode,
+        description: `Se o front-end é minha parte criativa, o back é minha parte lógica, alguns até me chamam de robo. Para mim não há satisfação
+        melhor do que resolver um problema logicamente e perceber que eu fui capaz. Eu acredito ter uma boa logica para resolver a maioria dos problemas 
+        além de conhecer ferramentas para isso, minha ferramenta principal de desenvolvimento é o NodeJS(TypeScript) e Django(Python).`,
       },
       2: {
-        img: charReact,
-        description: `React é meu amorzinho atualmente, gosto muito de codar. Já fiz alguns projetos em DOM,
-        mas depois que vim para o React, não quero mais sair. Aprendi diversas libs durante minha jornada, as principais foram:
-        Redux, Context, Framer-Motion, Chacka UI, Material UI, Styled-Components, Axios, e diversas outras 
-        que demorariam um tempo para citar.`,
+        img: char2,
+        description: `Para o trabalho em equipe e para desenvolvimento de projetos eu adquiri conhecimentos com algumas ferramentas tanto criativas como
+        organizacionais e produtivas. Para a parte criativa eu tenho experiencia com photoshop, figma, também tenho experiencias com criação de diagrama 
+        de relacionamento. Para a parte em equipe, tenho bastante experiencia com git, trello e notion.`,
       },
       3: {
-        img: charNode,
-        description: `Agora que eu me formei no front, estou indo para o Full-Stack. Comecei no node a uma semana atrás, a caminho
-        do Full-Stack, estou gostando bastante e já construi uma API de um CRUD.`,
+        img: charGif,
+        description: `Minha maior experiência é na Kenzie Academy, é um ambiente de ensino que prepara o profissional para o mercado de trabalho, lá eu aprendi
+        a trabalhar em equipe com algumas metodologias, como o SCRUM, onde fui Tech Leader duas vezes, Scrum Master uma vez, e Product Owner uma vez. Também, aprendi
+        a rotina de um profissional, como prazos para entrega, check-in e check-out. Tenho experiência como Mentor dentro da Kenzie, onde eu fazia reuniões diárias
+        com os devs, corrigia e revisava códigos e entregas.`,
       },
     },
   },
@@ -82,30 +84,34 @@ const languages = [
     },
     techs: {
       text1: "Technologies",
+      tab1: "Front End",
+      tab2: "Back End",
+      tab3: "Tools",
+      tab4: "Pratice",
       0: {
-        img: charJS,
-        description: `JavaScript is the language that I know most, 
-        I consider to have a good logic to solve more complex problems. As I am working more with the front,
-        I did not feel that my logic was challenged. I've been studying this language for 8 mouths.
-        I developed my programming logic quickly because of my python experience.`,
+        img: charReact,
+        description: `Front end is my creative part, this is where I let my mind work on artistic sides
+        and let my creativity work, I really like to show my ideas and leave everything organized and pleasant. I consider having
+        solid knowledge in front-end development and my main development tool is React(TypeScript).`,
       },
       1: {
-        img: charHtml,
-        description: `As a JavaScript student, I couldn't do whitout them and with these, I became aware of what a good
-        page should have. I practiced HTML semantics a lot, to use tags according to user accessibility. In CSS, I trained a lot 
-        of responsiveness, all the projects I did after learning the Mobile First concept were made for mobile and desktop. I also
-        have some UI and UX knowledge, but only the basics.`,
+        img: charNode,
+        description: `If the front end is my creative part, the back end is my logical part, some even call me a robot. For me there is no satisfaction
+        better than solving a problem logically and realizing that I was able to do it. I believe I have good logic to solve most problems
+        in addition to knowing tools for this, my main development tool is NodeJS(TypeScript) and Django(Python).`,
       },
       2: {
-        img: charReact,
-        description: `React is my love these days, I really like coding. I've done some projects in DOM, but after I came to React, 
-        I do not want to leave anymore. I learned several libs during my journey, the main ones were: Redux, Context, Framer-Motion,
-        Chackra UI, Material UI, Styled-Components, Axios, and several others that would take a while to mention.`,
+        img: char2,
+        description: `For teamwork and project development I acquired knowledge with some tools both creative and
+        organizational and productive. For the creative part I have experience with photoshop, figma, I also have experiences with diagram creation
+        of relationship. For the team part, I have a lot of experience with git, trello and notion.`,
       },
       3: {
-        img: charNode,
-        description: `Now that I've graduated from the front, I am moving to Full-Stack. I started on node a week ago, on my way to 
-        Full-Stack, I am really enjoying it and I've already built an API of a CRUD.`,
+        img: charGif,
+        description: `My greatest experience is at Kenzie Academy, it is a teaching environment that prepares professionals for the job market, there I learned
+        to work as a team with some methodologies, such as SCRUM, where I was Tech Leader twice, Scrum Master once, and Product Owner once. Also, I learned
+        the routine of a professional, such as deadlines for delivery, check-in and check-out. I have experience as a Mentor within Kenzie, where I held daily meetings
+        with the devs, correcting and reviewing code and deliveries.`,
       },
     },
   },

@@ -80,7 +80,7 @@ function Header({ setLanguage, activeLanguage }) {
             justifyContent={"center"}
             alignItems={"center"}
             gap={"30px"}
-            textAlign={"center"}
+            textAlign={"cenSiReactter"}
           >
             <Heading
               zIndex={"1"}
@@ -112,7 +112,7 @@ function Header({ setLanguage, activeLanguage }) {
               />
             </Text>
 
-            <Box display={"flex"} gap={"20px"}>
+            <Box display={"SiReactflex"} gap={"20px"}>
               <a
                 rel="noreferrer"
                 target="_blank"
@@ -172,7 +172,7 @@ function Header({ setLanguage, activeLanguage }) {
           maxW={"600px"}
           justifyContent={"space-evenly"}
         >
-          <Popover trigger="hover">
+          <Popover placement="top" trigger="hover">
             <Link to="about" smooth={true} duration={900}>
               <PopoverTrigger>
                 <IconButton
@@ -185,7 +185,7 @@ function Header({ setLanguage, activeLanguage }) {
 
             <PopoverContent w={"104px"}>
               <PopoverArrow />
-              <PopoverBody>
+              <PopoverBody textAlign={"center"}>
                 {activeLanguage.header.button1
                   ? activeLanguage.header.button1
                   : ""}
@@ -193,7 +193,7 @@ function Header({ setLanguage, activeLanguage }) {
             </PopoverContent>
           </Popover>
 
-          <Popover trigger="hover">
+          <Popover placement="top" trigger="hover">
             <Link to="techs" smooth={true} duration={900}>
               <PopoverTrigger>
                 <IconButton
@@ -204,9 +204,9 @@ function Header({ setLanguage, activeLanguage }) {
               </PopoverTrigger>
             </Link>
 
-            <PopoverContent w={"110px"}>
+            <PopoverContent w={"112px"}>
               <PopoverArrow />
-              <PopoverBody>
+              <PopoverBody textAlign={"center"}>
                 {activeLanguage.header.button2
                   ? activeLanguage.header.button2
                   : ""}
@@ -214,7 +214,7 @@ function Header({ setLanguage, activeLanguage }) {
             </PopoverContent>
           </Popover>
 
-          <Popover trigger="hover">
+          <Popover placement="top" trigger="hover">
             <Link to="projects" smooth={true} duration={900}>
               <PopoverTrigger>
                 <IconButton
@@ -227,7 +227,7 @@ function Header({ setLanguage, activeLanguage }) {
 
             <PopoverContent w={"85px"}>
               <PopoverArrow />
-              <PopoverBody>
+              <PopoverBody textAlign={"center"}>
                 {activeLanguage.header.button3
                   ? activeLanguage.header.button3
                   : ""}

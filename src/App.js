@@ -1,3 +1,4 @@
+import { Box } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import About from "./components/About";
 import Header from "./components/Header";
@@ -24,12 +25,12 @@ function App() {
   }, [language]);
 
   return (
-    <div style={{ overflowX: "hidden" }}>
+    <Box padding={0} maxW={"100%"} overflowX={"hidden"}>
       <Header activeLanguage={activeLanguage} setLanguage={setLanguage} />
       <About activeLanguage={activeLanguage} />
       <Technologies activeLanguage={activeLanguage} />
-      <Projects />
-    </div>
+      <Projects activeLanguage={activeLanguage} />
+    </Box>
   );
 }
 

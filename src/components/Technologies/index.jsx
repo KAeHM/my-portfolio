@@ -10,10 +10,32 @@ import {
   TabPanels,
   TabPanel,
   Progress,
+  Text,
 } from "@chakra-ui/react";
 import { useState } from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
+
+import {
+  SiReact,
+  SiJavascript,
+  SiTypescript,
+  SiRedux,
+  SiHtml5,
+  SiStyledcomponents,
+  SiNodedotjs,
+  SiPython,
+  SiDjango,
+  SiDocker,
+  SiPostgresql,
+  SiMongodb,
+  SiFigma,
+  SiTrello,
+  SiNotion,
+} from "react-icons/si";
+
+import { GrInspect, GrGroup, GrValidate, GrUserManager } from "react-icons/gr";
+import TechIcon from "../TechIcon";
 
 function Technologies({ activeLanguage }) {
   const [tech, setTech] = useState(0);
@@ -54,10 +76,18 @@ function Technologies({ activeLanguage }) {
           }}
         >
           <TabList>
-            <Tab color={"white"}>JavaScript</Tab>
-            <Tab color={"white"}>CSS e HTML</Tab>
-            <Tab color={"white"}>React JS</Tab>
-            <Tab color={"white"}>Node JS</Tab>
+            <Tab color={"white"}>
+              {activeLanguage.techs && activeLanguage.techs.tab1}
+            </Tab>
+            <Tab color={"white"}>
+              {activeLanguage.techs && activeLanguage.techs.tab2}
+            </Tab>
+            <Tab color={"white"}>
+              {activeLanguage.techs && activeLanguage.techs.tab3}
+            </Tab>
+            <Tab color={"white"}>
+              {activeLanguage.techs && activeLanguage.techs.tab4}
+            </Tab>
           </TabList>
           <TabPanels>
             <TabPanel
@@ -68,7 +98,20 @@ function Technologies({ activeLanguage }) {
               color={"white"}
             >
               <Progress colorScheme={"purple"} value={80}></Progress>
-              {activeLanguage.techs && activeLanguage.techs[tech].description}
+              <Text>
+                {activeLanguage.techs && activeLanguage.techs[tech].description}
+              </Text>
+              <Box display={"flex"} gap={"10px"} flexWrap={"wrap"}>
+                <TechIcon Icon={SiReact} name={"React"} />
+                <TechIcon Icon={SiJavascript} name={"JavaScript"} />
+                <TechIcon Icon={SiTypescript} name={"TypeScript"} />
+                <TechIcon Icon={SiRedux} name={"Redux"} />
+                <TechIcon Icon={SiHtml5} name={"HTML5"} />
+                <TechIcon
+                  Icon={SiStyledcomponents}
+                  name={"Styled Components"}
+                />
+              </Box>
             </TabPanel>
             <TabPanel
               textAlign={"justify"}
@@ -77,8 +120,20 @@ function Technologies({ activeLanguage }) {
               gap={"20px"}
               color={"white"}
             >
-              <Progress colorScheme={"purple"} value={75}></Progress>
-              {activeLanguage.techs && activeLanguage.techs[tech].description}
+              <Progress colorScheme={"purple"} value={80}></Progress>
+              <Text>
+                {activeLanguage.techs && activeLanguage.techs[tech].description}
+              </Text>
+              <Box display={"flex"} gap={"10px"} flexWrap={"wrap"}>
+                <TechIcon Icon={SiNodedotjs} name={"NodeJS"} />
+                <TechIcon Icon={SiJavascript} name={"JavaScript"} />
+                <TechIcon Icon={SiTypescript} name={"TypeScript"} />
+                <TechIcon Icon={SiPython} name={"Python"} />
+                <TechIcon Icon={SiDjango} name={"Django"} />
+                <TechIcon Icon={SiDocker} name={"Docker"} />
+                <TechIcon Icon={SiPostgresql} name={"Postgres"} />
+                <TechIcon Icon={SiMongodb} name={"Mongo"} />
+              </Box>
             </TabPanel>
             <TabPanel
               display={"flex"}
@@ -87,8 +142,15 @@ function Technologies({ activeLanguage }) {
               gap={"20px"}
               color={"white"}
             >
-              <Progress colorScheme={"purple"} value={65}></Progress>
-              {activeLanguage.techs && activeLanguage.techs[tech].description}
+              <Progress colorScheme={"purple"} value={70}></Progress>
+              <Text>
+                {activeLanguage.techs && activeLanguage.techs[tech].description}
+              </Text>
+              <Box display={"flex"} gap={"10px"} flexWrap={"wrap"}>
+                <TechIcon Icon={SiFigma} name={"Figma"} />
+                <TechIcon Icon={SiTrello} name={"Trello"} />
+                <TechIcon Icon={SiNotion} name={"Notion"} />
+              </Box>
             </TabPanel>
             <TabPanel
               textAlign={"justify"}
@@ -98,7 +160,15 @@ function Technologies({ activeLanguage }) {
               color={"white"}
             >
               <Progress colorScheme={"purple"} isIndeterminate></Progress>
-              {activeLanguage.techs && activeLanguage.techs[tech].description}
+              <Text>
+                {activeLanguage.techs && activeLanguage.techs[tech].description}
+              </Text>
+              <Box display={"flex"} gap={"10px"} flexWrap={"wrap"}>
+                <TechIcon Icon={GrInspect} name={"Tech Lead"} />
+                <TechIcon Icon={GrGroup} name={"Scrum Master"} />
+                <TechIcon Icon={GrValidate} name={"Product Owner"} />
+                <TechIcon Icon={GrUserManager} name={"Mentor Tech"} />
+              </Box>
             </TabPanel>
           </TabPanels>
         </Tabs>

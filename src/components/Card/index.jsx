@@ -1,11 +1,21 @@
 import { Box, Badge, Stack } from "@chakra-ui/react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 
+function IsNew(date) {
+  const createDate = new Date(date);
+  const dateNow = new Date(Date.now());
+  const sameMonth = createDate.getMonth() === dateNow.getMonth();
+  const sameYear = createDate.getFullYear() === dateNow.getFullYear();
+
+  return sameMonth && sameYear;
+}
+
 function Card({ elem }) {
-  let { title, shouldNew, languages, description, gitLink, demo } = elem;
+  let { name, language, created_at, description, html_url, homepage } = elem;
 
   return (
     <Box
+      minW={["240px", "240px", "370px"]}
       maxW="385px"
       bg={"black"}
       borderWidth="1px"
@@ -19,29 +29,20 @@ function Card({ elem }) {
             fontWeight="semibold"
             fontSize="xl"
             textTransform="uppercase"
+            noOfLines={1}
           >
-            {title}
+            {name}
           </Box>
           <Badge borderRadius="full" px="2" colorScheme="purple">
-            {shouldNew ? "New" : ""}
+            {IsNew(created_at) ? "New" : ""}
           </Badge>
         </Box>
 
         <Box color={"gray.300"} lineHeight={"tight"}>
-          Linguagens:
-          {languages.map((elem, index) => {
-            return (
-              <Badge
-                key={index}
-                ml={"2.5"}
-                borderRadius={"full"}
-                px="2"
-                colorScheme={"teal"}
-              >
-                {elem}
-              </Badge>
-            );
-          })}
+          Linguagem Base:
+          <Badge ml={"2.5"} borderRadius={"full"} px="2" colorScheme={"teal"}>
+            {language}
+          </Badge>
         </Box>
 
         <Box color={"gray.300"} noOfLines={2}>
@@ -49,7 +50,7 @@ function Card({ elem }) {
         </Box>
 
         <Stack justifyContent={"space-around"} direction={"row"}>
-          <a rel="noreferrer" target="_blank" href={gitLink}>
+          <a rel="noreferrer" target="_blank" href={html_url}>
             <Box
               cursor={"pointer"}
               alignItems={"center"}
@@ -61,18 +62,20 @@ function Card({ elem }) {
               Github code
             </Box>
           </a>
-          <a rel="noreferrer" target="_blank" href={demo}>
-            <Box
-              cursor={"pointer"}
-              alignItems={"center"}
-              gap={"10px"}
-              color={"gray.300"}
-              display={"flex"}
-            >
-              <FiExternalLink />
-              Demo
-            </Box>
-          </a>
+          {homepage && (
+            <a rel="noreferrer" target="_blank" href={homepage}>
+              <Box
+                cursor={"pointer"}
+                alignItems={"center"}
+                gap={"10px"}
+                color={"gray.300"}
+                display={"flex"}
+              >
+                <FiExternalLink />
+                Demo
+              </Box>
+            </a>
+          )}
         </Stack>
       </Box>
     </Box>
